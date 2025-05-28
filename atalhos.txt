@@ -1,0 +1,21 @@
+    cd projeto-agente-ia/backend (navegar até o backend)
+
+    .\\venv\\Scripts\\activate (ativar o ambiente virtual) ou source venv/bin/activate
+
+    pip install fastapi uvicorn sqlalchemy (instalar dependencias)
+
+    python -m uvicorn app.main:app --reload --log-level debug(inicia a api unsado Uvicorn)
+python -m uvicorn: Executa o módulo uvicorn.
+app.main:app: Diz ao uvicorn para procurar pela instância app dentro do módulo main que está dentro do pacote app.
+--reload: Reinicia o servidor automaticamente quando você salva alterações nos arquivos.
+--log-level debug: Mostra mensagens de log mais detalhadas (INFO, DEBUG, etc.), útil para depuração.
+
+Resumo passo a passo:
+Abra o terminal e execute os seguintes comandos em sequência:
+
+cd projeto-agente-ia/backend
+.\\venv\\Scripts\\activate
+python -m uvicorn app.main:app --reload --log-level debug
+
+Esses são os comandos básicos para colocar a API no ar para desenvolvimento. Lembre-se que o comando python -m uvicorn app.main:app --reload --log-level debug mantém o servidor rodando; para parar, você geralmente pressiona Ctrl+C no terminal onde ele está sendo executado.
+
